@@ -1,0 +1,122 @@
+var a = 'Rafel Olmos'
+console.log(a.length)
+console.log(a.indexOf(" "))
+
+var nom = a.slice(0, a.indexOf(' '))
+var cognom = a.slice(a.indexOf(' ')+1, a.length)
+
+console.log(a + ', ' + cognom)
+
+a.replace('Rafel', 'Mr.')
+
+var nomPropi = (nom + ' ' + cognom.toUpperCase())
+
+nomPropi
+
+nom.slice(0,1)
+cognom.slice(0,1)
+
+var j
+var Name = ["Rafel Olmos"];
+var Name2 = []
+for (let i = 0; i < Name.length; i++) {
+  for (j = 0; j < Name[i].length; j++) {
+    Name2 = Name2 + (Name[i][j] + '/')
+  }
+}
+console.log(Name2)
+
+function logArrayElements(element, index, array) {
+  console.log(element, index);
+}
+
+// Cal destacar l'omissió, no hi ha cap element a la posició 2 així que aquesta no es visita
+[2, 5, 6, 9].forEach(logArrayElements);
+// Mostra:
+// a[0] = 2
+// a[1] = 5
+// a[3] = 9
+
+console.log('--------------------')
+
+var avenger = {
+    name : "Tony",
+    class : "VII",
+    id : 1
+};
+
+console.log(Object.keys(avenger))
+console.log(Object.values(avenger))
+
+avenger.class = 'XI'
+
+console.log(avenger)
+
+avenger.city = 'Barcelona';
+
+console.log(avenger)
+
+delete avenger.id
+
+console.log(avenger)
+
+console.log(Object.keys(avenger).length)
+
+avenger.fullName = 'Tony Stark'
+
+avenger.name = avenger.fullName
+
+console.log(avenger)
+
+
+function Avenger(id, fullName, classRoom, city, job, studies,markAv) {
+    this.id = id
+    this.fullName = fullName;
+    this.classRoom = classRoom;
+    this.city = city;
+    this.job= job;
+    this.studies= studies;
+    this.markAv = markAv;
+    this.listProperties = function (){
+      console.log(this.name + ', ' + this.classRoom + ', ' + this.city + ', ' + this.job + ', ' + this.studies + ', ' + this.markAv)
+    }
+}
+var tonyStark = new Avenger (1, "Tony Stark", "XI", "NYC", "Engineer", "MIT", 10)
+
+var speiderman = new Avenger (2, "Spiderman", "X", "NYC", "student", "Phisics", 6)
+
+var thor = new Avenger (3, "Thor", "VII", "Denmark", "carpenter", "engineering", 8)
+
+var superman = new Avenger (4, "Clark Ken", "II", "NYC", "journalist", "flying", 10)
+
+var rafelolmos = new Avenger (5,'Rafel Olmos', 'VIII', 'Barcelona', 'student', 'philosopy', 8)
+console.log('..............')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

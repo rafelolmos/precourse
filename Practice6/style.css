@@ -1,0 +1,121 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul {
+    background: #ffffff;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+    padding: 0 10px;
+    list-style: none;
+    margin: 3px 0;
+}
+
+nav ul li a {
+    color: #000000;
+    font-size: 15px;
+}
+
+nav li a:hover {
+    color: red;
+}
+
+#main{
+    background-image: url(http://lorempixel.com/400/200);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;   
+    width: 100%;
+    position: relative;
+}
+
+#main .message {
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    color: #ffffff;
+    padding: 120px 0;
+    font-size: 30px;
+}
+
+#offer {
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 11px;
+    width: 100%;
+    height: 295px;
+    text-align: center;
+}
+#offer .price {
+    display: inline-block;
+    width: 210px;
+    margin: 0 10px;
+    border: 1px solid rgb(167, 167, 167);
+}
+
+#offer .price .valor {
+    color: #ffffff;
+    height: 100px;
+    text-transform: uppercase;
+}
+
+#offer .price .valor div:last-child {
+    color: lightgrey;
+}   
+
+#offer .price .valor .dolar {
+    font-size: 50px;
+}
+
+#offer .price .valor .descripcio {
+    font-size: 13px;
+}
+
+#offer .price .valor .descripcio.destacat {
+    font-weight: 900;
+}
+
+#offer .price .caracteristiques ul {
+    background-color: lightgrey;
+    
+}
+
+#offer .price .caracteristiques ul li {
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+    list-style: none;
+    color: black;
+}
+
+#offer .price .boto {
+    padding: 10px;
+    background: #ffffff;
+}
+
+#offer .price .boto a {
+    background-color: rgb(167, 167, 167);
+    border-radius: 25px;
+    display: inline-block;
+    width: 75px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px #000000;
+}
+
+#first{
+    background: rgb(3, 131, 22);
+}
+
+#second{
+    background: rgb(2, 84, 139);
+}
+
+#third{
+    background: rgb(3, 3, 3);
+}

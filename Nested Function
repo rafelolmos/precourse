@@ -1,0 +1,29 @@
+function meuNom(myName){
+  return(myName)
+}
+var myName = meuNom('Rafel')
+
+myName
+
+function salutacio(myName, myAge){
+  return ('Hola '+ myName + ', tens '+ myAge + ' anys')
+} 
+
+var myFunction = salutacio('Rafel', 40)
+
+myFunction
+
+function anys(myAge) {
+  return(myAge)
+}
+var myAge = anys(40)
+
+myAge
+
+myAge + myName
+console.log('---------------')
+
+function personData(myAge, myName){
+  return('hola '+myAge+' edat '+myName)
+}
+personData('rafel',40)

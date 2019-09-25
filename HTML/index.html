@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML introduction</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header>
+    <h1>HTML introduction</h1>
+  </header>
+  <body>
+    <section>
+      <h2>1. Forms</h2>
+      <form id="loginForm" onsubmit="onLogin(event)">
+        <h3>Login form example</h3>
+        <label for="username">Username:</label><br>
+        <input type="text" name="username" id="username" />
+        <br />
+        <label for="user-password">Password:</label><br>
+        <input type="password" id="user-password" name="user-password" /><br>
+        <button>Login</button><br>
+      </form>
+      <span class="hidden" id="message">Message here</span>
+    </section>
+    <section>
+      <h2>2. Event Handlers</h2>
+      <button id="view-button">View next section</button>
+      <button class="hidden" id="close-button">
+        Close Keyboard Events Section
+      </button>
+    </section>
+    <section class="hidden" id="keyboard-events-section">
+      <h2>3. Keyboard Events</h2>
+      <div>
+        <div id="float-circle"></div>
+        <div id="platform"></div>
+        <div id="floor"></div>
+      </div>
+    </section>
+  </body>
+  <script src="main.js"></script>
+</html>
